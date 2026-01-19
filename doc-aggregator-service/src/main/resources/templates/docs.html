@@ -1,13 +1,4 @@
-<html lang="en">
-<head>
-    <title>Documentation Aggregator</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS from WebJars -->
-    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
+<html lang="en" th:replace="~{page :: page ('Documentation Aggregator', ~{ :: .container})}">
 <body>
 <div class="container mt-4">
     <header class="mb-5">
@@ -52,10 +43,5 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap Bundle with Popper from WebJars -->
-<script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
-<!-- Bootstrap Icons from WebJars -->
-<link th:href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}" rel="stylesheet">
 </body>
 </html>

@@ -47,7 +47,7 @@ class SecurityConfiguration {
         http {
             authorizeHttpRequests {
                 authorize(EndpointRequest.toAnyEndpoint(), permitAll)
-                authorize(anyOf(pathPattern("/css/**"), pathPattern("/favicon.ico")), permitAll)
+                authorize(anyOf(pathPattern("/webjars/**"), pathPattern("/css/**"), pathPattern("/favicon.ico")), permitAll)
                 authorize(DocumentationSectionController.REQUEST_MAPPING, permitAll)
                 authorize(AdminController.REQUEST_MAPPING + "/**", hasRole("ADMIN"))
                 authorize(anyRequest, denyAll)
